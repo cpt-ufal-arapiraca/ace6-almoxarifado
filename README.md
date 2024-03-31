@@ -1,6 +1,6 @@
 # Almoxarifado
 
-Um parágrafo da descrição do projeto vai aqui
+No cenário acadêmico em constante evolução, a eficiência na gestão do almoxarifado de uma faculdade é crucial para garantir o bom funcionamento das atividades administrativas e acadêmicas. Nesse contexto, a implementação de um site web dedicado ao almoxarifado surge como uma estratégia inovadora, alinhada aos princípios da modernização e otimização de processos
 
 ## 🚀 Começando
 
@@ -62,9 +62,9 @@ Adicione notas adicionais sobre como implantar isso em um sistema ativo
 
 Mencione as ferramentas que você usou para criar seu projeto
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - O framework web usado
-* [Maven](https://maven.apache.org/) - Gerente de Dependência
-* [ROME](https://rometools.github.io/rome/) - Usada para gerar RSS
+* BackEnd: Django(Python)
+* FrontEnd: React(JavaScript)
+* Banco de dados: MariaDB
 
 ## 🖇️ Colaborando
 
@@ -78,22 +78,13 @@ Nós usamos [SemVer](http://semver.org/) para controle de versão. Para as vers�
 
 Mencione todos aqueles que ajudaram a levantar o projeto desde o seu início
 
-* **Um desenvolvedor** - *Trabalho Inicial* - [umdesenvolvedor](https://github.com/linkParaPerfil)
-* **Fulano De Tal** - *Documentação* - [fulanodetal](https://github.com/linkParaPerfil)
+* Uanderson Henrique Batista da Silva
+* Saimon Felipe de Lima Santos
+* Leonardo Lima e Silva
+* Rangell Monteiro Soares
 
-Você também pode ver a lista de todos os [colaboradores](https://github.com/usuario/projeto/colaboradores) que participaram deste projeto.
 
 ## 📄 Licença
 
 Este projeto está sob a licença (sua licença) - veja o arquivo [LICENSE.md](https://github.com/usuario/projeto/licenca) para detalhes.
 
-## 🎁 Expressões de gratidão
-
-* Conte a outras pessoas sobre este projeto 📢;
-* Convide alguém da equipe para uma cerveja 🍺;
-* Um agradecimento publicamente 🫂;
-* etc.
-
-
----
-⌨️ com ❤️ por [Armstrong Lohãns](https://gist.github.com/lohhans) 😊
