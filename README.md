@@ -8,6 +8,11 @@ Essas instruções permitirão que você obtenha uma cópia do projeto em opera�
 
 Consulte **[Implantação](#-implanta%C3%A7%C3%A3o)** para saber como implantar o projeto.
 
+## Diagramas
+
+Diagrama Entidade Relacionamento![Entidade-Relacionamento Almox](https://github.com/cpt-ufal-arapiraca/ace6-almoxarifado/assets/155195549/2379bc2c-35c8-4d67-a95f-1d79844c5e6f)
+
+
 ### 📋 Pré-requisitos
 
 De que coisas você precisa para instalar o software e como instalá-lo?
