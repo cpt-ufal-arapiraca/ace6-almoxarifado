@@ -45,20 +45,11 @@ body {
     display: flex;
     border-radius: 15px;
     overflow: hidden;
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform 0.8s;
     position: relative;
 }
 
-.box:hover {
-    transform: scale(1.05); /* Aumenta a caixa na parte inferior */
-}
 
-.box:hover .box-content {
-    border-left: 3px solid #0095DA;
-    border-right: 3px solid #0095DA;
-    border-bottom: 3px solid #0095DA;
-
-}
 
 
 .box-img{
