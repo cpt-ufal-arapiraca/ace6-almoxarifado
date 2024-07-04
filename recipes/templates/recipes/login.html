@@ -1,11 +1,12 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="pt_BR">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen" />
+    <link rel="stylesheet" href="{% static "recipes/css/stylesLogin.css" %}"  >
+    <link rel="shortcut icon" type="imagex/png" href="{% static "recipes/images/icon.png" %}">
     <title>Login</title>
 </head>
 
@@ -13,7 +14,7 @@
 <body>
     <div class="container">
         <div class="containerTemplate">
-            <img src="TemplateAside.png" class="imageLogin" > 
+            <img src="{% static "recipes/images/TemplateAside.png" %}" class="imageLogin" > 
         </div>
         <div class="containerLogin" >
             <h2>Login</h2>
