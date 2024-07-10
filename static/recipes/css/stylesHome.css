@@ -55,6 +55,23 @@ body {
     display: block;
 }
 
+.box-img{
+    width: 235px;
+    height: 110px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    overflow: hidden;
+    margin: 0 auto 10px;
+    
+}
+.box-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
 .container-options{
     width: 288px;
     margin-top: 60px;
@@ -149,11 +166,7 @@ body {
 }
 
 
-.box-img{
-    width: 100%;
-    height: 110px;
-    background-color: black;
-}
+
 .box-content{
     width: calc(100% - 2px);
     height: 110px;
