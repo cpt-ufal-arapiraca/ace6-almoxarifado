@@ -139,31 +139,6 @@ body {
     
 }
 
-.box{
-
-    width: 237px;
-    height: 220px;
-    flex-direction: column;
-    display: flex;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: transform 0.5s;
-    position: relative;
-    transform-origin: top left;
-}
-
-.box:hover {
-    transform: scale(1.045); /* Aumenta a caixa na parte inferior */
-}
-
-.box:hover .box-content {
-    
-    border-left: 1px solid #0095DA;
-    border-right: 1px solid #0095DA;
-    border-bottom: 1px solid #0095DA;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-}
 
 
 
