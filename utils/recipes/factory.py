@@ -26,4 +26,4 @@ def make_sector():
 
 if __name__ == '__main__':
     from pprint import pprint
-    pprint(make_person())
+    pprint(rand_ratio())

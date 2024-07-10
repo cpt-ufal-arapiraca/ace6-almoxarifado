@@ -4,23 +4,27 @@ body {
     font-family: 'Roboto', sans-serif; /* Aplicando a fonte personalizada */
     margin: 0;
     padding: 0;
+    min-height: 100vh;
+    min-width: 100vh;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    height: 720px;
-    width: 1280px;
 
+
+}
+
+.container {
+    min-height: 100vh;
+    min-width: 100vh;
+    position: relative;
+    display: flex;
 }
 
 
 .containerLeft{
     width: 288px; 
-    height: 100%;
     background-color: #0095DA;
-    position: absolute;
-    left: 0;
-    top: 0;
-
+    position: relative;
 
 }
 
@@ -55,31 +59,15 @@ body {
     display: block;
 }
 
-.box-img{
-    width: 235px;
-    height: 110px;
-    display: flex; 
-    justify-content: center; 
-    align-items: center;
-    overflow: hidden;
-    margin: 0 auto 10px;
-    
-}
-.box-img img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-
-}
-
 .container-options{
-    width: 288px;
+
     margin-top: 60px;
     display: flex;
     flex-direction: column;
 }
 
 .options{
+    width: 288px;
     height: 50px;
     display: flex;
     text-align: center;
@@ -98,15 +86,22 @@ body {
     margin-left: 20px ; /* Margem de 20px no topo e na base */
 }
 
-.options-sair{
-    margin-top: 240px;
+.line-bottom{
+    bottom: 0px;
+    position: absolute;
 }
 
 .direitos{
-    margin-top: 15px;
-    margin-left: 14px;
+    margin: 15px;
     color: #E0E0E0;
     font-size: 12px;
+    bottom: 0;
+    position: absolute;
+}
+
+.sair{
+    bottom: 40px;
+    position: absolute;
 }
 
 .text-options{
@@ -123,25 +118,59 @@ body {
     margin-left: 26px;
 }
 
-.main-content{
-    margin-left: 413px ;
-    margin-top: 108px;
-
-
-    width: 795px;
-    height: 482px;
-}
 
 .main-content-list{
+    position: absolute;
+    margin-left: 413px ;
+    margin-top: 108px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 42px;
     
 }
 
+.box{
+
+    width: 237px;
+    height: 220px;
+    flex-direction: column;
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.5s;
+    position: relative;
+    transform-origin: top left;
+}
+
+.box:hover {
+    transform: scale(1.045); /* Aumenta a caixa na parte inferior */
+}
+
+.box:hover .box-content {
+    
+    border-left: 1px solid #0095DA;
+    border-right: 1px solid #0095DA;
+    border-bottom: 1px solid #0095DA;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
 
 
+.box-img{
+    width: 235px;
+    height: 110px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    overflow: hidden;
 
+}
+
+.box-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 .box-content{
     width: calc(100% - 2px);
     height: 110px;
@@ -151,6 +180,8 @@ body {
     border-bottom-right-radius: 10px;
 
 }
+
+
 
 .box-title{
     margin-top: 21px;
