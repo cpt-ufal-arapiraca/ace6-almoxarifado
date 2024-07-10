@@ -4,23 +4,27 @@ body {
     font-family: 'Roboto', sans-serif; /* Aplicando a fonte personalizada */
     margin: 0;
     padding: 0;
+    min-height: 100vh;
+    min-width: 100vh;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    height: 720px;
-    width: 1280px;
 
+
+}
+
+.container {
+    min-height: 100vh;
+    min-width: 100vh;
+    position: relative;
+    display: flex;
 }
 
 
 .containerLeft{
     width: 288px; 
-    height: 100%;
-    background-color: #6b2381;
-    position: absolute;
-    left: 0;
-    top: 0;
-
+    background-color: #0095DA;
+    position: relative;
 
 }
 
@@ -56,13 +60,14 @@ body {
 }
 
 .container-options{
-    width: 288px;
+
     margin-top: 60px;
     display: flex;
     flex-direction: column;
 }
 
 .options{
+    width: 288px;
     height: 50px;
     display: flex;
     text-align: center;
@@ -81,15 +86,22 @@ body {
     margin-left: 20px ; /* Margem de 20px no topo e na base */
 }
 
-.options-sair{
-    margin-top: 240px;
+.line-bottom{
+    bottom: 0px;
+    position: absolute;
 }
 
 .direitos{
-    margin-top: 15px;
-    margin-left: 14px;
+    margin: 15px;
     color: #E0E0E0;
     font-size: 12px;
+    bottom: 0;
+    position: absolute;
+}
+
+.sair{
+    bottom: 40px;
+    position: absolute;
 }
 
 .text-options{
@@ -106,16 +118,11 @@ body {
     margin-left: 26px;
 }
 
-.main-content{
-    margin-left: 413px ;
-    margin-top: 108px;
-
-
-    width: 795px;
-    height: 482px;
-}
 
 .main-content-list{
+    position: absolute;
+    margin-left: 413px ;
+    margin-top: 108px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 42px;
