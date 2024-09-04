@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" src"{% static "recipes/css/stylesLogin.css" %}"  >
+    <link rel="stylesheet" href="{% static "/recipes/css/stylesLogin.css" %}"  >
     <link rel="shortcut icon" type="imagex/png" href="{% static "recipes/images/icon.png" %}">
     <title>Login</title>
 </head>
@@ -18,12 +18,14 @@
         </div>
         <div class="containerLogin" >
             <h2>Login</h2>
-            <form>
-                <label for="username">Nome de Usuário:</label>
-                <input class="usuarioInput" type="text" id="username" name="username" required>
+
+            <form method="post" action="{% url 'login' %}">
+                {% csrf_token %}
+                <label for="login">Nome de Usuário:</label>
+                <input class="usuarioInput" type="text" id="login" name="login" required>
                 
-                <label for="password">Senha:</label>
-                <input class="usuarioInput" type="password" id="password" name="password" required>
+                <label for="senha">Senha:</label>
+                <input class="usuarioInput" type="senha" id="senha" name="senha" required>
                 
                 <div class="options">
                     <label>
@@ -32,9 +34,14 @@
                     </label>
                     <a href="esqueceu-senha.html" class="esqueceuSenha">Esqueceu a senha?</a>
                 </div>
-
-                <button type="submit"><a href="/home">Entrar</a></button>
+                
+                <button type="submit">Entrar</a></button>
+                
             </form>
+
+            {% if error_message %}
+                <p style="color: red;">{{ error_message }}</p>
+            {% endif %}
         </div>
 </div>
 
