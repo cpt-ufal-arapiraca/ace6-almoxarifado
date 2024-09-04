@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt_BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static "/recipes/css/stylesLogin.css" %}"  >
+    <link rel="shortcut icon" type="imagex/png" href="{% static "recipes/images/icon.png" %}">
+    <title>Login</title>
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="containerTemplate">
+            <img src="{% static "recipes/images/TemplateAside.png" %}" class="imageLogin" > 
+        </div>
+        <div class="containerLogin" >
+            <h2>Login</h2>
+
+            <form method="post" action="{% url 'login' %}">
+                {% csrf_token %}
+                <label for="login">Nome de Usuário:</label>
+                <input class="usuarioInput" type="text" id="login" name="login" required>
+                
+                <label for="senha">Senha:</label>
+                <input class="usuarioInput" type="senha" id="senha" name="senha" required>
+                
+                <div class="options">
+                    <label>
+                        <input type="checkbox">
+                        Lembrar de mim
+                    </label>
+                    <a href="esqueceu-senha.html" class="esqueceuSenha">Esqueceu a senha?</a>
+                </div>
+                
+                <button type="submit">Entrar</a></button>
+                
+            </form>
+
+            {% if error_message %}
+                <p style="color: red;">{{ error_message }}</p>
+            {% endif %}
+        </div>
+</div>
+
+</body>
+
+</html>
