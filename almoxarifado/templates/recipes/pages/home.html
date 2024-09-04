@@ -1,0 +1,14 @@
+{% extends "global/base.html" %}
+
+{% block title %}{% endblock title %}
+
+{% block content %}
+<div class="main-content-list">
+    {% for boxOptions in boxOptions %}
+
+        {% include 'recipes/partials/boxOptions.html'%}
+    
+    {% endfor %}
+</div>
+{% endblock content %}
+

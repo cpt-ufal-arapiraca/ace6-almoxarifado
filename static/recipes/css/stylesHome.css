@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif; /* Aplicando a fonte personalizada */
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    min-width: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.container {
+    min-height: 100vh;
+    min-width: 100vh;
+    position: relative;
+    display: flex;
+}
+
+
+.containerLeft{
+    width: 288px; 
+    background-color: #0095DA;
+    position: relative;
+
+}
+
+.container-perfil{
+    width: 93px;
+    height: 97px;
+    margin-left: 95px;
+    margin-top: 50px;
+
+}
+
+.name-perfil{
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 19px;
+}
+
+.icon-perfil{
+    align-items: center;
+    width: 83px;
+    height: 83px;
+    text-align: center;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 10px; /* Centraliza a imagem verticalmente e adiciona margem embaixo */
+
+}
+
+.icon-perfil img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.container-options{
+
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.options{
+    width: 288px;
+    height: 50px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    
+}
+.options:hover{
+    background-color: #00AEFF;
+}
+
+
+.separator-line {
+    width: calc(100% - 40px); /* Largura total menos 20px de margem em cada lado */
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.4);
+    margin-left: 20px ; /* Margem de 20px no topo e na base */
+}
+
+.line-bottom{
+    bottom: 0px;
+    position: absolute;
+}
+
+.direitos{
+    margin: 15px;
+    color: #E0E0E0;
+    font-size: 12px;
+    bottom: 0;
+    position: absolute;
+}
+
+.sair{
+    bottom: 40px;
+    position: absolute;
+}
+
+.text-options{
+    font-size: 16px;
+    color:#FFFFFF;
+    display: flex;
+    margin-left: 14px;
+}
+
+.icon-options{
+    width: 24px;
+    height: 24px;
+    display: flex;
+    margin-left: 26px;
+}
+
+
+.main-content-list{
+    position: absolute;
+    margin-left: 413px ;
+    margin-top: 108px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 42px;
+    
+}
+
+.box{
+
+    width: 237px;
+    height: 220px;
+    flex-direction: column;
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.5s;
+    position: relative;
+    transform-origin: top left;
+}
+
+.box:hover {
+    transform: scale(1.045); /* Aumenta a caixa na parte inferior */
+}
+
+.box:hover .box-content {
+    
+    border-left: 1px solid #0095DA;
+    border-right: 1px solid #0095DA;
+    border-bottom: 1px solid #0095DA;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+
+.box-img{
+    width: 235px;
+    height: 110px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    overflow: hidden;
+
+
+}
+
+.box-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: sepia(100%) saturate(200%) hue-rotate(180deg);
+}
+.box-content{
+    width: calc(100% - 2px);
+    height: 110px;
+    background-color: white;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+
+link{
+    text-decoration: none;
+    
+
+}
+
+.box-title{
+    margin-top: 21px;
+    font-size: 24px;
+    color:#0095DA;
+    margin-bottom: 4px;
+}
+
+.box-text{
+    margin-top: 4px;
+    font-size: 12px;
+    color:#333333;
+    max-width: 185px;
+    margin: auto;
+}
