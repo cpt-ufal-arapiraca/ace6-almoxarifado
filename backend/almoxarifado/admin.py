@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Modulos, Usuario, AcessoModulos, Produto, Log
+from .models import Modulos, Usuario, AcessoModulos, Produto, Pedido, ItensPedido
 
 @admin.register(Modulos)
 class ModulosAdmin(admin.ModelAdmin):
@@ -17,7 +17,10 @@ class AcessoModulosAdmin(admin.ModelAdmin):
 class ProdutoAdmin(admin.ModelAdmin):
     ...
 
-@admin.register(Log)
-class LogAdmin(admin.ModelAdmin):
+@admin.register(Pedido)
+class PedidoAdmin(admin.ModelAdmin):
     ...
 
+@admin.register(ItensPedido)
+class ItensPedidoAdmin(admin.ModelAdmin):
+    ...
